@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class EducacionService {
 
 
-  URL = 'http://localhost:8080/educacion/';
+  URL = 'https://backendmep.onrender.com/educacion/';
 
 
 
