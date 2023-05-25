@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Educacion } from '../model/educacion';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -9,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 export class EducacionService {
 
 
-  URL = 'https://backendmep.onrender.com/educacion/';
+  URL = environment.URL + 'educacion/';
 
 
 
