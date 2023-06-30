@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LogoAPComponent } from './components/logo-ap/logo-ap.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { AcercadeComponent } from './components/acerca-de/acercade.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
@@ -24,10 +22,11 @@ import { NeweducacionComponent } from './components/educacion/neweducacion.compo
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
 import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { NewSkillComponent } from './components/hys/new-skill.component';
-import { EditAcercaDeComponent } from './components/acerca-de/edit-acerca-de.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { AcercadeComponent } from './components/acercade/acercade.component';
+import { EditAcercaDeComponent } from './components/acercade/edit-acerca-de.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +34,6 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     HeaderComponent,
     LogoAPComponent,
     BannerComponent,
-    AcercadeComponent,
     ExperienciaComponent,
     EducacionComponent,
     HysComponent,
@@ -49,7 +47,9 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     EditeducacionComponent,
     EditSkillComponent,
     NewSkillComponent,
-    EditAcercaDeComponent
+    AcercadeComponent,
+    EditAcercaDeComponent,
+
   ],
   imports: [
     BrowserModule,
